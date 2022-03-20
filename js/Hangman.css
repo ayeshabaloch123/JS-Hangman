@@ -1,0 +1,19 @@
+.main {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20px;
+  font-family: serif;
+}
+.choose {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: larger;
+}
+#wordSpotlight {
+  font-family: serif;
+  font-size: larger;
+  font-weight: bold;
+}
+.float-right {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+}

@@ -21,6 +21,7 @@ let mistakes = 0;
 let guessed = [];
 let wordStatus = null;
 
+
 function randomWord() {
   answer = programming_languages[Math.floor(Math.random() * programming_languages.length)];
 }
@@ -61,14 +62,20 @@ function updateHangmanPicture() {
 
 function checkIfGameWon() {
   if (wordStatus === answer) {
+    
     document.getElementById('keyboard').innerHTML = 'You Won!!!';
+   
   }
+  
 }
 
 function checkIfGameLost() {
   if (mistakes === maxWrong) {
+    
     document.getElementById('wordSpotlight').innerHTML = 'The answer was: ' + answer;
+
     document.getElementById('keyboard').innerHTML = 'You Lost!!!';
+    
   }
 }
 
@@ -83,6 +90,8 @@ function updateMistakes() {
 }
 
 function reset() {
+  
+
   mistakes = 0;
   guessed = [];
   document.getElementById('hangmanPic').src = './images/0.jpg';
@@ -94,6 +103,7 @@ function reset() {
 }
 
 document.getElementById('maxWrong').innerHTML = maxWrong;
+
 
 randomWord();
 generateButtons();
